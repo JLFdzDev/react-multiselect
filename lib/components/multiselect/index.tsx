@@ -18,7 +18,7 @@ interface MultiSelectProps {
 	theme?: Theme
 }
 
-const MultiSelect = ({ theme = getTheme(), label, name, options: opts, placeholder }: MultiSelectProps) => {
+const MultiSelect = ({ theme = getTheme({}), label, name, options: opts, placeholder }: MultiSelectProps) => {
 	const { options, handleCheck, setOrToggleCheck } = useMultiSelect(opts)
 	const { open, handleDisplay } = useDisplay()
 	const { searchRef, filteredOptions, handleSearch } = useSearch(open, options)
