@@ -32,13 +32,11 @@ const options = [
 
 const App = () => {
 	const customTheme: Theme = {
-		...getTheme({
-			bgColor: 'bg-slate-500'
-		})
+		...getTheme({})
 	}
 	return (
 		<div className="min-h-screen">
-			<div className="w-full max-w-screen-2xl mx-auto py-10">
+			<div className="w-full max-w-[300px] mx-auto py-10">
 				<MultiSelect name="frutas" options={options} label="Pruebas" theme={customTheme} />
 			</div>
 		</div>
