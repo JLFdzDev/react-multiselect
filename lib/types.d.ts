@@ -13,11 +13,10 @@ export interface Theme {
 	selectLabel?: string
 	select?: string
 	selectedOptionsUl?: string
-	selectedOptionButton?: string
-	selectedOptionRemoveButton?: string
-	selectDropdownButton?: string
-	selectDropdownOpenerWrapper?: string
-	selectDropdownOpenerButton?: string
+	selectedOptionLabel?: string
+	selectedOptionX?: string
+	selectDropdownChevron?: string
+	selectDropdownOpener?: string
 	dropdown?: string
 	dropdownUl?: string
 	dropdownSearchWrapper?: string
@@ -26,5 +25,5 @@ export interface Theme {
 	dropdownOptionLabel?: string
 	dropdownOptionCheckbox?: string
 	dropdownOptionCheckboxCheckedColor?: string
-	dropdownCloseButton?: string
+	dropdownClose?: string
 }

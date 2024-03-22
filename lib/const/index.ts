@@ -20,11 +20,10 @@ export function getTheme ({
 		selectLabel: 'relative z-20',
 		select: `relative flex justify-between w-full py-2 px-4 z-20 ${bgColor} ${textColor} ${borderColor} ${borderSize} ${rounded}`,
 		selectedOptionsUl: 'flex gap-2 w-full overflow-hidden',
-		selectedOptionButton: `flex gap-1 justify-center items-center py-0.5 px-2 text-sm bg-sky-500 text-sky-100 ${rounded}`,
-		selectedOptionRemoveButton: 'size-4',
-		selectDropdownOpenerWrapper: 'flex-1',
-		selectDropdownOpenerButton: 'w-full h-full',
-		selectDropdownButton: 'size-6 transition-transform duration-300 ease-in-out',
+		selectedOptionLabel: `flex gap-1 justify-center items-center py-0.5 px-2 text-sm bg-sky-500 text-sky-100 cursor-pointer ${rounded}`,
+		selectedOptionX: 'size-4',
+		selectDropdownOpener: 'flex-1 cursor-pointer',
+		selectDropdownChevron: 'size-6 transition-transform duration-300 ease-in-out cursor-pointer',
 		dropdown: 'relative',
 		dropdownUl: `absolute flex flex-col w-full max-h-52 overflow-y-auto z-20 transition-opacity duration-300 ease-in-out ${bgColor} ${textColor} ${borderColor} ${borderSize} ${rounded}`,
 		dropdownSearchWrapper: 'flex-1',
@@ -33,7 +32,7 @@ export function getTheme ({
 		dropdownOptionLabel: 'flex items-center gap-2 w-full cursor-pointer',
 		dropdownOptionCheckbox: 'size-4 focus:ring-2',
 		dropdownOptionCheckboxCheckedColor: '#E0F2FE',
-		dropdownCloseButton: 'absolute inset-0 z-10 cursor-default'
+		dropdownClose: 'absolute inset-0 z-10 cursor-default'
 	}
 	return THEME
 }

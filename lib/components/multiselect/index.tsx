@@ -28,12 +28,11 @@ const MultiSelect = ({ theme = getTheme({}), label, name, options: opts, placeho
 			<span className={theme.selectLabel}>{label}</span>
 			<div className={theme.select}>
 				<ul className={theme.selectedOptionsUl}>
-					{options.every((o) => !o.isSelected) && (<li>{placeholder ?? 'Selecciona una opción...'}</li>)}
 					{options.filter((o) => o.isSelected).map((o) => (
 						<MultiSelectSelectedOption key={o.value} theme={theme} option={o} onClick={() => { setOrToggleCheck(o.value, false) } } />
 					))}
-					<li className={theme.selectDropdownOpenerWrapper}>
-						<button className={theme.selectDropdownOpenerButton} onClick={handleDisplay} aria-hidden></button>
+					<li className={theme.selectDropdownOpener} onClick={handleDisplay}>
+						{options.every((o) => !o.isSelected) && (placeholder ?? 'Selecciona una opción...')}
 					</li>
 				</ul>
 				<MultiSelectOpener open={open} theme={theme} onClick={handleDisplay} />
@@ -50,7 +49,7 @@ const MultiSelect = ({ theme = getTheme({}), label, name, options: opts, placeho
 					))}
 				</ul>
 			</div>
-			<button onClick={handleDisplay} className={theme.dropdownCloseButton} style={{ display: open ? 'block' : 'none' }} aria-hidden></button>
+			<div onClick={handleDisplay} className={theme.dropdownClose} style={{ display: open ? 'block' : 'none' }}></div>
 		</div>
 	)
 }

@@ -9,9 +9,9 @@ interface MultiSelectOpenerProps {
 
 const MultiSelectOpener = ({ open, theme, onClick }: MultiSelectOpenerProps) => {
 	return (
-		<button onClick={onClick}>
-			<Chevron className={theme.selectDropdownButton} style={{ transform: open ? 'rotate(0deg)' : 'rotate(180deg)' }} />
-		</button>
+		<span onClick={onClick}>
+			<Chevron className={theme.selectDropdownChevron} style={{ transform: open ? 'rotate(0deg)' : 'rotate(180deg)' }} />
+		</span>
 	)
 }
 

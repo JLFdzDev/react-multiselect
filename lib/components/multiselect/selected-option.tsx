@@ -10,11 +10,9 @@ interface MultiselectSelectedOptionProps {
 
 const MultiSelectSelectedOption = ({ option, theme, onClick }: MultiselectSelectedOptionProps) => {
 	return (
-		<li>
-			<button className={theme.selectedOptionButton} onClick={onClick}>
-				{option.label}
-				<Close className={theme.selectedOptionRemoveButton} />
-			</button>
+		<li className={theme.selectedOptionLabel} onClick={onClick}>
+			{option.label}
+			<Close className={theme.selectedOptionX} />
 		</li>
 	)
 }
