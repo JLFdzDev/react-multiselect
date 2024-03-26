@@ -1,6 +1,16 @@
 {
 	"name": "@jlfdzdev/react-multiselect",
 	"description": "A simple and customizable multiselect component for React",
+	"keywords": [
+		"react",
+		"multi",
+		"select",
+		"multiselect",
+		"dropdown",
+		"select",
+		"component",
+		"ui"
+	],
 	"author": {
 		"name": "JLFdzDev"
 	},
