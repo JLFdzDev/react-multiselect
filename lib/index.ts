@@ -1,4 +1,8 @@
-import MultiSelect from './components/multiselect'
+// Components
+export * from './components'
 
-export { MultiSelect }
+// Utils
+export * from './utils'
+
+// Types
 export * from './types.d'

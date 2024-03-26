@@ -8,7 +8,7 @@ import { useMultiSelect } from '../../hooks/useMultiSelect'
 import { useSearch } from '../../hooks/useSearch'
 import { useDisplay } from '../../hooks/useDisplay'
 
-import { getTheme } from '../../const'
+import { getTheme } from '../../utils'
 
 interface MultiSelectProps {
 	label?: string

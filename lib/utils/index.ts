@@ -6,7 +6,6 @@ interface Args {
 	borderColor?: string
 	borderSize?: string
 	rounded?: string
-
 }
 
 export function getTheme ({

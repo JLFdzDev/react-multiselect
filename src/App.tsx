@@ -1,5 +1,5 @@
 import MultiSelect from '../lib/components/multiselect'
-import { getTheme } from '../lib/const'
+import { getTheme } from '../lib/utils'
 import { type Theme } from '../lib/types'
 
 const options = [
