@@ -11,6 +11,10 @@
 		"component",
 		"ui"
 	],
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/JLFdzDev/react-multiselect.git"
+	},
 	"author": {
 		"name": "JLFdzDev"
 	},
